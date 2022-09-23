@@ -1,4 +1,4 @@
-# Star Wars API
+# Star Wars API 
 
 
 ### Pasos
@@ -29,12 +29,24 @@ npm run test
 
 ### Apis
 
-- character
+- Servicios en DynamoDB
 
 | servicio      | detalle                       |
 |:--------------|:----------------------------------|
 | `add/character`      | Crea un nuevo registro en la tabla character de DynamoDB. |
 | `list/characters`    | Lista todos los characters de la tabla character de DynamoDB |
+
+
+- Servicios integrados de SWAPI
+
+| servicio      | detalle                       |
+|:--------------|:----------------------------------|
+| `swapi/people`      | Lista la información de todos los personajes de StarWars |
+| `swapi/people/{id}`    | Obtiene por id la información de un personaje de Star Wars |
+| `swapi/planet`      | Lista la información de todos los planetas de StarWars |
+| `swapi/planet/{id}`    | Obtiene por id la información de un planeta de Star Wars |
+| `swapi/vehicle`      | Lista la información de todos los vehiculos de StarWars |
+| `swapi/vehicle/{id}`    | Obtiene por id la información de un vehiculo de Star Wars |
 
 ### Despliegue
 
@@ -47,4 +59,4 @@ sls deploy
 
 ### Para más detalles
 
-- [API Doc Swagger](https://app.swaggerhub.com/apis-docs/infantito/star-wars/1.0.0)
+- [API Doc Swagger](https://g5sc9m1igk.execute-api.sa-east-1.amazonaws.com/swagger)

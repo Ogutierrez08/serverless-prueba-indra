@@ -62,6 +62,122 @@
           }
         }
       }
+    },
+    "/swapi/people/{id}": {
+      "get": {
+        "summary": "getPeople",
+        "description": "",
+        "operationId": "getPeople.get./swapi/people/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        }
+      }
+    },
+    "/swapi/planet": {
+      "get": {
+        "summary": "getAllPlanets",
+        "description": "",
+        "operationId": "getAllPlanets.get./swapi/planet",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        }
+      }
+    },
+    "/swapi/planet/{id}": {
+      "get": {
+        "summary": "getPlanet",
+        "description": "",
+        "operationId": "getPlanet.get./swapi/planet/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        }
+      }
+    },
+    "/swapi/vehicle": {
+      "get": {
+        "summary": "getAllVehicles",
+        "description": "",
+        "operationId": "getAllVehicles.get./swapi/vehicle",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        }
+      }
+    },
+    "/swapi/vehicle/{id}": {
+      "get": {
+        "summary": "getVehicle",
+        "description": "",
+        "operationId": "getVehicle.get./swapi/vehicle/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        }
+      }
     }
   },
   "definitions": {},

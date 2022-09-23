@@ -1,9 +1,11 @@
 const AWS = require('aws-sdk')
 
 const dynamoConnection = () => {
-  const dynamodb =  new AWS.DynamoDB.DocumentClient()
+  return new Promise((resolve, reject) => {
+    const dynamodb = new AWS.DynamoDB.DocumentClient()
+    resolve(dynamodb)
+  })
 
-  return dynamodb
 }
 
-module.exports = {dynamoConnection}
+module.exports = { dynamoConnection }

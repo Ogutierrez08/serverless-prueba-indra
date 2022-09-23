@@ -48,7 +48,36 @@ functions:
       - httpApi:
           path: /swapi/people
           method: get
-	
+  getPeople:
+    handler: src/functions/people.getPeople
+    events:
+      - httpApi:
+          path: /swapi/people/{id}
+          method: get
+  getAllPlanets:
+    handler: src/functions/planet.getAllPlanets
+    events:
+      - httpApi:
+          path: /swapi/planet
+          method: get
+  getPlanet:
+    handler: src/functions/planet.getPlanet
+    events:
+      - httpApi:
+          path: /swapi/planet/{id}
+          method: get
+  getAllVehicles:
+    handler: src/functions/vehicle.getAllVehicles
+    events:
+      - httpApi:
+          path: /swapi/vehicle
+          method: get
+  getVehicle:
+    handler: src/functions/vehicle.getVehicle
+    events:
+      - httpApi:
+          path: /swapi/vehicle/{id}
+          method: get
 resources:
   Resources:
     charactersTable:

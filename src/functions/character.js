@@ -1,38 +1,14 @@
 const { characterAddService, characterListService } = require('../services/characterService')
 
-const addCharacter = async (event) => {
-  try {
-    const newCharacter = await characterAddService(event)
-
-    return {
-      status: 200,
-      body: newCharacter
-    }
-  } catch (error) {
-    return {
-      status: 400,
-      body: error
-    }
-  }
+const addCharacter =  (event , context, callback) => {
+  
+    characterAddService(process.env.CHARACTER_TABLE,event,callback)
 
 }
 
-const allCharacters = async () => {
-  try {
-    const characters = await characterListService()
+const allCharacters = (event, context, callback) => {
 
-    return {
-      status: 200,
-      body: {
-        characters
-      }
-    }
-  } catch (error) {
-    return {
-      status: 400,
-      body: error
-    }
-  }
+  characterListService(process.env.CHARACTER_TABLE,callback)
 
 }
 
